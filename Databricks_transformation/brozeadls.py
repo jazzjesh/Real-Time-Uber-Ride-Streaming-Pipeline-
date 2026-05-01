@@ -14,7 +14,7 @@ files = [
 ]
 for file in files:
     file_name=file["file"]
-    url =f"https://dluberdepro.blob.core.windows.net/raw/ingestion/{file_name}.json?sp=r&st=2026-04-30T20:53:03Z&se=2026-05-01T05:08:03Z&spr=https&sv=2025-11-05&sr=c&sig=AqGfDbPh7nYr1LDj%2FGJ7bFQ4T0A9qGgg%2FglcKFM7JRQ%3D"
+    url =f"https://dluberdepro.blob.core.windows.net/raw/ingestion/{file_name}.json?"
     df=pd.read_json(url)
      
     df_spark = spark.createDataFrame(df)
