@@ -111,7 +111,7 @@ Databricks Workflow and Pipeline Deployment Readiness
 
 Live ride booking events are generated from a simulated Uber-style application and sent to Azure Event Hubs through a Kafka-compatible producer.
 
-Example ride event fields:
+ride event fields:
 
 ```text
 ride_id
@@ -198,18 +198,13 @@ Key transformations:
 - Combine historical bulk ride data with streaming ride events
 - Prepare clean data for dimensional modeling
 
-Example tables:
 
-```text
-stg_rides
-silver_rides
-```
 
 ### Gold Layer
 
 The Gold layer contains analytics-ready fact and dimension tables modeled using a star schema.
 
-Example Gold tables:
+Gold tables:
 
 ```text
 fact_rides
@@ -373,7 +368,7 @@ Prepare deployment-ready artifacts
 
 ---
 
-## Suggested Repository Structure
+## Repository Structure
 
 ```text
 Real-Time-Uber-Ride-Streaming-Pipeline/
@@ -416,37 +411,6 @@ Real-Time-Uber-Ride-Streaming-Pipeline/
 
 ---
 
-## Example Analytics Use Cases
-
-The final Gold layer can support analytics such as:
-
-- Total rides by city
-- Revenue by pickup and dropoff location
-- Average ride fare by vehicle type
-- Most used payment methods
-- Driver rating analysis
-- Ride cancellation trends
-- Hourly and daily ride volume
-- Average trip distance and duration
-- Tip amount analysis
-- Vehicle type performance
-
----
-
-## Example Business Questions
-
-```text
-Which city generates the highest ride revenue?
-Which vehicle type is most frequently used?
-What is the average fare per ride?
-Which payment method is most popular?
-Which drivers have the highest average rating?
-What are the most common cancellation reasons?
-What time of day has the highest ride demand?
-How does ride duration vary by city?
-```
-
----
 
 ## Project Highlights
 
@@ -460,13 +424,6 @@ How does ride duration vary by city?
 - Created a star schema with fact and dimension tables
 - Added GitHub Actions CI/CD for validation and deployment readiness
 
----
-
-## Resume Bullet
-
-Built an end-to-end real-time Uber ride analytics pipeline using Azure Event Hubs, Kafka-compatible streaming, Azure Data Factory, Databricks, Spark Declarative Pipelines, and Delta Lake to process batch and streaming data into Bronze, Silver, and Gold layers with star schema modeling and GitHub Actions CI/CD validation.
-
----
 
 ## Skills Demonstrated
 
@@ -484,12 +441,6 @@ Built an end-to-end real-time Uber ride analytics pipeline using Azure Event Hub
 - CI/CD with GitHub Actions
 - PySpark and SQL development
 - Data validation and transformation
-
----
-
-## Status
-
-Completed as a portfolio data engineering project.
 
 ---
 
