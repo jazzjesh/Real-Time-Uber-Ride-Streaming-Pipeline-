@@ -12,7 +12,7 @@ The final Gold layer is designed using a star schema to support reporting and an
 
 ## Architecture
 
-![Real-Time Streaming Data Pipeline Architecture](images/architecture.png)
+![Real-Time Streaming Data Pipeline Architecture](architecture.png)
 
 ---
 
